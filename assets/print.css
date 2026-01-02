@@ -1,0 +1,25 @@
+/* =====================
+   PRINT
+===================== */
+@media print{
+    body *{
+        visibility:hidden;
+    }
+
+    .bill, .bill *{
+        visibility:visible;
+    }
+
+    .bill{
+        margin:0;
+        border:none;
+    }
+
+    button{
+        display:none;
+    }
+
+    .dua{
+        display:block;
+    }
+}
