@@ -1,0 +1,237 @@
+/* =====================
+   GLOBAL
+===================== */
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Noto Nastaliq Urdu', serif;
+    background:#f4f6f7;
+    direction:rtl;
+}
+
+
+/* =====================
+   DASHBOARD
+===================== */
+.dashboard{
+    max-width:1000px;
+    margin:30px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+
+.dashboard h2{
+    color:#0a7c3a;
+    margin-bottom:10px;
+}
+
+.dashboard a{
+    text-decoration:none;
+    background:#0a7c3a;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:5px;
+    margin-left:5px;
+    font-size:14px;
+}
+
+/* Dashboard Table */
+.dash{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.dash th{
+    background:#0a7c3a;
+    color:#fff;
+}
+
+.dash th, .dash td{
+    border:1px solid #ccc;
+    padding:6px;
+    text-align:center;
+    font-size:14px;
+}
+
+/* =====================
+   BILL CONTAINER
+===================== */
+.bill{
+    max-width:420px;
+    margin:15px auto;
+    background:#fff;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.header{
+    text-align:center;
+    border-bottom:2px solid #0a7c3a;
+    padding-bottom:6px;
+}
+
+.header h1{
+    margin:0;
+    color:#0a7c3a;
+    font-size:22px;
+}
+
+.header p{
+    margin:2px 0;
+    font-size:13px;
+}
+
+
+/* =====================
+   FORM
+===================== */
+label{
+    font-size:14px;
+    display:block;
+    margin-top:6px;
+}
+
+input, select{
+    width:100%;
+    padding:6px;
+    font-size:14px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin-top:3px;
+    font-family:'Noto Nastaliq Urdu', serif;
+}
+
+button{
+    width:100%;
+    background:#0a7c3a;
+    color:#fff;
+    border:none;
+    padding:10px;
+    margin-top:8px;
+    font-size:15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.back-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:6px;
+    padding:9px;
+    background:#e8e9ff;
+    color:#5b5fc7;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* print میں hide */
+@media print{
+    .back-btn{ display:none; }
+}
+
+/* =====================
+   TABLE
+===================== */
+.table-wrap{
+    overflow-x:auto;
+    margin-top:8px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:380px;
+    font-size:13px;
+}
+
+#items{
+    font-size:12px;
+}
+
+#items th, #items td{
+    padding:2px;
+}
+
+th{
+    background:#0a7c3a;
+    color:#fff;
+}
+
+th, td{
+    border:1px solid #ccc;
+    padding:4px;
+    text-align:center;
+}
+
+.rowtotal{
+    font-weight:bold;
+}
+/* =====================
+   TOTAL
+===================== */
+h3{
+    text-align:center;
+    color:#000;
+    margin:10px 0;
+}
+/* =====================
+   DUA
+===================== */
+.dua{
+    display:none;
+    text-align:center;
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* =====================
+   MOBILE FIX
+===================== */
+@media (max-width:480px){
+    .bill{
+        margin:5px;
+        padding:10px;
+    }
+
+    .header h1{
+        font-size:20px;
+    }
+
+    button{
+        font-size:14px;
+    }
+}
+
+/* =====================
+   PRINT
+===================== */
+@media print{
+    body *{
+        visibility:hidden;
+    }
+
+    .bill, .bill *{
+        visibility:visible;
+    }
+
+    .bill{
+        margin:0;
+        border:none;
+    }
+
+    button{
+        display:none;
+    }
+
+    .dua{
+        display:block;
+    }
+}
